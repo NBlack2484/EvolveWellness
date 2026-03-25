@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evolve Wellness | Hormone Therapy, Weight Loss & IV Therapy | Arnold & Eureka, MO</title>
+<meta name="description" content="Evolve Wellness offers cutting-edge hormone replacement therapy, medical weight loss, IV therapy, and anti-aging treatments in Arnold and Eureka, MO. Feel your best — evolve today.">
+<meta name="keywords" content="hormone replacement therapy Arnold MO, weight loss clinic Missouri, IV therapy Arnold, testosterone optimization, peptide therapy, wellness clinic Eureka MO">
+<meta property="og:title" content="Evolve Wellness | Arnold & Eureka, MO">
+<meta property="og:description" content="Cutting-edge wellness therapies — hormone optimization, weight loss, IV therapy, and more.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --steel: #4a90b8;
+    --steel-light: #6db4d8;
+    --steel-dark: #2e6a8a;
+    --steel-glow: rgba(74,144,184,0.35);
+    --black: #080c10;
+    --dark: #0d1520;
+    --dark2: #111c2a;
+    --dark3: #162236;
+    --white: #f0f6fa;
+    --white-dim: rgba(240,246,250,0.7);
+    --white-faint: rgba(240,246,250,0.15);
+    --accent: #7ecef4;
+    --grad: linear-gradient(135deg, #080c10 0%, #0d1d30 40%, #0a1828 70%, #05111e 100%);
+  }
+
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  /* ── MESH BACKGROUND ── */
+  body::before {
+    content:'';
+    position:fixed; inset:0; z-index:0;
+    background:
+      radial-gradient(ellipse 80% 60% at 15% 20%, rgba(74,144,184,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 85% 70%, rgba(46,106,138,0.10) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 50% at 50% 100%, rgba(74,144,184,0.08) 0%, transparent 60%),
+      linear-gradient(160deg, #080c10 0%, #0c1a28 35%, #081420 65%, #050d18 100%);
+    pointer-events:none;
+  }
+
+  /* ── NOISE OVERLAY ── */
+  body::after {
+    content:'';
+    position:fixed; inset:0; z-index:1;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    opacity:0.4; pointer-events:none;
+  }
+
+  section, nav, header, footer { position:relative; z-index:2; }
+
+  /* ══════════════════════════════════════
+     NAV
+  ══════════════════════════════════════ */
+  nav {
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:0 5vw;
+    height:72px;
+    background: rgba(8,12,16,0.85);
+    backdrop-filter: blur(18px) saturate(1.5);
+    border-bottom: 1px solid rgba(74,144,184,0.15);
+    transition: background 0.3s;
+  }
+
+  .nav-logo {
+    display:flex; align-items:center; gap:12px;
+    text-decoration:none;
+  }
+
+  .nav-logo svg { width:38px; height:38px; }
+
+  .nav-logo-text {
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.45rem;
+    font-weight:600;
+    color: var(--white);
+    letter-spacing:0.08em;
+  }
+  .nav-logo-text span { color: var(--steel-light); }
+
+  .nav-links {
+    display:flex; align-items:center; gap:2rem;
+    list-style:none;
+  }
+  .nav-links a {
+    color: var(--white-dim);
+    text-decoration:none;
+    font-size:0.82rem;
+    font-weight:400;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    transition: color 0.2s;
+    position:relative;
+  }
+  .nav-links a::after {
+    content:''; position:absolute; bottom:-3px; left:0; right:0; height:1px;
+    background: var(--steel-light);
+    transform:scaleX(0); transform-origin:left;
+    transition: transform 0.25s ease;
+  }
+  .nav-links a:hover { color: var(--steel-light); }
+  .nav-links a:hover::after { transform:scaleX(1); }
+
+  .nav-cta {
+    background: transparent;
+    border: 1px solid var(--steel);
+    color: var(--steel-light) !important;
+    padding: 8px 20px;
+    border-radius: 2px;
+    font-size:0.78rem !important;
+    letter-spacing:0.15em;
+    transition: background 0.25s, color 0.25s !important;
+  }
+  .nav-cta::after { display:none !important; }
+  .nav-cta:hover {
+    background: var(--steel) !important;
+    color: var(--white) !important;
+  }
+
+  .hamburger {
+    display:none; flex-direction:column; gap:5px; cursor:pointer;
+    background:none; border:none; padding:4px;
+  }
+  .hamburger span {
+    display:block; width:24px; height:1.5px;
+    background: var(--steel-light);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  .mobile-menu {
+    display:none; position:fixed; inset:0; z-index:99;
+    background: rgba(8,12,16,0.97);
+    backdrop-filter:blur(20px);
+    flex-direction:column; align-items:center; justify-content:center; gap:2.5rem;
+  }
+  .mobile-menu.open { display:flex; }
+  .mobile-menu a {
+    color: var(--white);
+    text-decoration:none;
+    font-family:'Cormorant Garamond', serif;
+    font-size:2rem;
+    font-weight:400;
+    letter-spacing:0.05em;
+    transition: color 0.2s;
+  }
+  .mobile-menu a:hover { color: var(--steel-light); }
+  .mobile-menu .m-close {
+    position:absolute; top:24px; right:5vw;
+    font-size:1.5rem; color: var(--white-dim); cursor:pointer;
+    background:none; border:none;
+  }
+
+  @media(max-width:768px){
+    .nav-links { display:none; }
+    .hamburger { display:flex; }
+  }
+
+  /* ══════════════════════════════════════
+     HERO
+  ══════════════════════════════════════ */
+  #hero {
+    min-height: 100vh;
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center;
+    text-align:center;
+    padding: 100px 5vw 80px;
+    position:relative; overflow:hidden;
+  }
+
+  /* lotus watermark */
+  #hero .hero-lotus-bg {
+    position:absolute; top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    width: min(700px, 90vw); height: min(700px, 90vw);
+    opacity:0.04;
+    pointer-events:none;
+  }
+
+  /* animated ring */
+  .hero-ring {
+    position:absolute; top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    width:min(600px,90vw); height:min(600px,90vw);
+    border-radius:50%;
+    border: 1px solid rgba(74,144,184,0.12);
+    animation: ringPulse 6s ease-in-out infinite;
+    pointer-events:none;
+  }
+  .hero-ring:nth-child(2){ width:min(480px,75vw); height:min(480px,75vw); animation-delay:1.5s; border-color:rgba(74,144,184,0.08);}
+  .hero-ring:nth-child(3){ width:min(360px,60vw); height:min(360px,60vw); animation-delay:3s; border-color:rgba(74,144,184,0.06);}
+
+  @keyframes ringPulse {
+    0%,100%{ opacity:0.5; transform:translate(-50%,-50%) scale(1);}
+    50%{ opacity:1; transform:translate(-50%,-50%) scale(1.03);}
+  }
+
+  .hero-eyebrow {
+    font-size:0.72rem;
+    font-weight:500;
+    letter-spacing:0.3em;
+    text-transform:uppercase;
+    color: var(--steel-light);
+    margin-bottom:1.5rem;
+    opacity:0;
+    animation: fadeUp 0.8s 0.2s forwards;
+  }
+
+  .hero-title {
+    font-family:'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 8vw, 7.5rem);
+    font-weight:300;
+    line-height:1;
+    letter-spacing:-0.01em;
+    color: var(--white);
+    margin-bottom:0.15em;
+    opacity:0;
+    animation: fadeUp 0.9s 0.4s forwards;
+  }
+  .hero-title em {
+    font-style:italic;
+    color: var(--steel-light);
+    font-weight:600;
+  }
+
+  .hero-sub {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight:200;
+    color: var(--white-dim);
+    max-width:640px;
+    line-height:1.7;
+    margin: 1.5rem auto 0;
+    opacity:0;
+    animation: fadeUp 0.9s 0.6s forwards;
+  }
+
+  .hero-divider {
+    width:60px; height:1px;
+    background: linear-gradient(90deg, transparent, var(--steel), transparent);
+    margin: 2.5rem auto;
+    opacity:0;
+    animation: fadeUp 0.8s 0.8s forwards;
+  }
+
+  .hero-actions {
+    display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;
+    opacity:0; animation: fadeUp 0.8s 1s forwards;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--steel-dark), var(--steel));
+    color: var(--white);
+    border: none;
+    padding: 14px 36px;
+    font-family:'Jost', sans-serif;
+    font-size:0.82rem;
+    font-weight:500;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    text-decoration:none;
+    border-radius:2px;
+    cursor:pointer;
+    transition: opacity 0.25s, transform 0.25s, box-shadow 0.25s;
+    box-shadow: 0 0 28px rgba(74,144,184,0.25);
+  }
+  .btn-primary:hover {
+    opacity:0.9; transform:translateY(-2px);
+    box-shadow: 0 8px 40px rgba(74,144,184,0.4);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--steel-light);
+    border: 1px solid rgba(74,144,184,0.5);
+    padding: 14px 36px;
+    font-family:'Jost', sans-serif;
+    font-size:0.82rem;
+    font-weight:500;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    text-decoration:none;
+    border-radius:2px;
+    cursor:pointer;
+    transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.25s;
+  }
+  .btn-outline:hover {
+    background: rgba(74,144,184,0.1);
+    border-color: var(--steel-light);
+    color: var(--white);
+    transform:translateY(-2px);
+  }
+
+  .hero-scroll {
+    position:absolute; bottom:32px; left:50%;
+    transform:translateX(-50%);
+    display:flex; flex-direction:column; align-items:center; gap:8px;
+    opacity:0; animation: fadeIn 1s 1.5s forwards;
+    color: var(--white-dim);
+    font-size:0.68rem;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+  }
+  .scroll-line {
+    width:1px; height:40px;
+    background: linear-gradient(180deg, var(--steel-light), transparent);
+    animation: scrollDrop 2s ease-in-out infinite;
+  }
+  @keyframes scrollDrop {
+    0%{transform:scaleY(0);transform-origin:top;}
+    50%{transform:scaleY(1);transform-origin:top;}
+    51%{transform:scaleY(1);transform-origin:bottom;}
+    100%{transform:scaleY(0);transform-origin:bottom;}
+  }
+
+  @keyframes fadeUp {
+    from{ opacity:0; transform:translateY(28px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  @keyframes fadeIn {
+    from{ opacity:0; } to{ opacity:1; }
+  }
+
+  /* ══════════════════════════════════════
+     LOCATIONS SECTION
+  ══════════════════════════════════════ */
+  #locations {
+    padding: 100px 5vw;
+    text-align:center;
+  }
+
+  .section-label {
+    font-size:0.7rem;
+    font-weight:500;
+    letter-spacing:0.3em;
+    text-transform:uppercase;
+    color: var(--steel);
+    margin-bottom:1rem;
+  }
+
+  .section-title {
+    font-family:'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 5vw, 3.8rem);
+    font-weight:300;
+    color: var(--white);
+    line-height:1.1;
+    margin-bottom:1rem;
+  }
+  .section-title em { font-style:italic; color: var(--steel-light); font-weight:600; }
+
+  .section-sub {
+    color: var(--white-dim);
+    font-size:0.95rem;
+    line-height:1.8;
+    max-width:560px;
+    margin: 0 auto 4rem;
+  }
+
+  .locations-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2px;
+    max-width:1100px;
+    margin:0 auto;
+    position:relative;
+  }
+
+  @media(max-width:768px){
+    .locations-grid { grid-template-columns:1fr; }
+  }
+
+  .location-card {
+    position:relative; overflow:hidden;
+    padding: 56px 48px;
+    background: rgba(13,21,32,0.9);
+    border: 1px solid rgba(74,144,184,0.12);
+    text-align:left;
+    transition: border-color 0.3s, transform 0.3s;
+    cursor:default;
+  }
+  .location-card::before {
+    content:''; position:absolute; top:0; left:0; right:0; height:2px;
+    background: linear-gradient(90deg, transparent, var(--steel), transparent);
+    transform:scaleX(0); transform-origin:left;
+    transition: transform 0.5s ease;
+  }
+  .location-card:hover { border-color: rgba(74,144,184,0.35); transform:translateY(-4px); }
+  .location-card:hover::before { transform:scaleX(1); }
+
+  /* EUREKA — COMING SOON card special treatment */
+  .location-card.coming-soon {
+    background: linear-gradient(135deg, rgba(13,21,32,0.95), rgba(18,32,50,0.95));
+    border-color: rgba(74,144,184,0.25);
+  }
+  .location-card.coming-soon::after {
+    content:'';
+    position:absolute; inset:0;
+    background:
+      radial-gradient(ellipse 70% 60% at 70% 40%, rgba(74,144,184,0.07) 0%, transparent 70%);
+    pointer-events:none;
+  }
+
+  /* animated glow ring for Eureka */
+  .eureka-glow {
+    position:absolute; top:-60px; right:-60px;
+    width:280px; height:280px;
+    border-radius:50%;
+    background: radial-gradient(circle, rgba(74,144,184,0.15) 0%, transparent 70%);
+    animation: glowPulse 3s ease-in-out infinite;
+    pointer-events:none;
+  }
+  @keyframes glowPulse {
+    0%,100%{ opacity:0.5; transform:scale(1); }
+    50%{ opacity:1; transform:scale(1.2); }
+  }
+
+  .loc-badge {
+    display:inline-block;
+    font-size:0.65rem;
+    font-weight:600;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    padding: 5px 14px;
+    border-radius:20px;
+    margin-bottom:1.5rem;
+  }
+  .badge-open {
+    background: rgba(74,144,184,0.15);
+    color: var(--steel-light);
+    border: 1px solid rgba(74,144,184,0.3);
+  }
+  .badge-soon {
+    background: linear-gradient(90deg, rgba(74,144,184,0.2), rgba(126,206,244,0.2));
+    color: var(--accent);
+    border: 1px solid rgba(126,206,244,0.4);
+    animation: badgePulse 2s ease-in-out infinite;
+  }
+  @keyframes badgePulse {
+    0%,100%{ box-shadow: 0 0 0 rgba(126,206,244,0); }
+    50%{ box-shadow: 0 0 16px rgba(126,206,244,0.35); }
+  }
+
+  .loc-name {
+    font-family:'Cormorant Garamond', serif;
+    font-size:2.5rem;
+    font-weight:600;
+    color: var(--white);
+    line-height:1;
+    margin-bottom:0.4rem;
+  }
+
+  .loc-state {
+    font-size:0.78rem;
+    letter-spacing:0.2em;
+    color: var(--steel-light);
+    text-transform:uppercase;
+    margin-bottom:1.5rem;
+  }
+
+  .loc-divider {
+    width:40px; height:1px;
+    background: var(--steel);
+    margin-bottom:1.5rem;
+  }
+
+  .loc-info {
+    font-size:0.88rem;
+    line-height:1.9;
+    color: var(--white-dim);
+    margin-bottom:2rem;
+  }
+  .loc-info strong { color: var(--white); font-weight:500; }
+
+  /* Eureka coming soon content */
+  .coming-soon-headline {
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.6rem;
+    font-weight:400;
+    font-style:italic;
+    color: var(--accent);
+    margin-bottom:1rem;
+    line-height:1.3;
+  }
+
+  .coming-soon-text {
+    font-size:0.88rem;
+    line-height:1.9;
+    color: var(--white-dim);
+    margin-bottom:2rem;
+  }
+
+  /* countdown */
+  .countdown-label {
+    font-size:0.65rem;
+    letter-spacing:0.25em;
+    text-transform:uppercase;
+    color: var(--steel);
+    margin-bottom:1rem;
+  }
+  .countdown {
+    display:flex; gap:1.2rem; margin-bottom:2rem;
+  }
+  .cd-unit {
+    text-align:center;
+  }
+  .cd-num {
+    font-family:'Cormorant Garamond', serif;
+    font-size:2.4rem;
+    font-weight:600;
+    color: var(--white);
+    line-height:1;
+    display:block;
+    min-width:52px;
+  }
+  .cd-label {
+    font-size:0.6rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color: var(--steel-light);
+    margin-top:4px;
+    display:block;
+  }
+  .cd-sep {
+    font-family:'Cormorant Garamond', serif;
+    font-size:2rem;
+    color: var(--steel);
+    line-height:1;
+    padding-top:0.1em;
+  }
+
+  /* notify form */
+  .notify-form {
+    display:flex; gap:0.5rem; flex-wrap:wrap;
+  }
+  .notify-form input[type=email] {
+    flex:1; min-width:160px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(74,144,184,0.3);
+    color: var(--white);
+    padding: 11px 16px;
+    font-family:'Jost', sans-serif;
+    font-size:0.82rem;
+    border-radius:2px;
+    outline:none;
+    transition: border-color 0.2s;
+  }
+  .notify-form input[type=email]:focus { border-color: var(--steel-light); }
+  .notify-form input::placeholder { color: rgba(240,246,250,0.35); }
+  .notify-form button {
+    background: linear-gradient(135deg, var(--steel-dark), var(--steel));
+    color: var(--white);
+    border:none;
+    padding: 11px 22px;
+    font-family:'Jost', sans-serif;
+    font-size:0.78rem;
+    font-weight:500;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    border-radius:2px;
+    cursor:pointer;
+    transition: opacity 0.2s, transform 0.2s;
+    white-space:nowrap;
+  }
+  .notify-form button:hover { opacity:0.85; transform:translateY(-1px); }
+
+  /* particle canvas */
+  #particles {
+    position:fixed; inset:0; z-index:1; pointer-events:none;
+  }
+
+  /* ══════════════════════════════════════
+     SERVICES
+  ══════════════════════════════════════ */
+  #services {
+    padding: 100px 5vw;
+    text-align:center;
+    background: rgba(8,12,16,0.5);
+    border-top: 1px solid rgba(74,144,184,0.08);
+  }
+
+  .services-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap:1px;
+    max-width:1100px;
+    margin: 0 auto;
+    border: 1px solid rgba(74,144,184,0.1);
+  }
+
+  .service-card {
+    padding: 44px 36px;
+    background: rgba(13,21,32,0.85);
+    text-align:left;
+    position:relative; overflow:hidden;
+    transition: background 0.3s;
+  }
+  .service-card::after {
+    content:''; position:absolute; bottom:0; left:0; right:0; height:1px;
+    background: linear-gradient(90deg, transparent, rgba(74,144,184,0.2), transparent);
+  }
+  .service-card:hover { background: rgba(18,32,50,0.95); }
+
+  .service-icon {
+    width:44px; height:44px; margin-bottom:1.5rem;
+    color: var(--steel-light);
+  }
+
+  .service-name {
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.5rem;
+    font-weight:600;
+    color: var(--white);
+    margin-bottom:0.7rem;
+    line-height:1.2;
+  }
+
+  .service-desc {
+    font-size:0.85rem;
+    line-height:1.8;
+    color: var(--white-dim);
+    margin-bottom:1.5rem;
+  }
+
+  .service-link {
+    font-size:0.72rem;
+    font-weight:500;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color: var(--steel-light);
+    text-decoration:none;
+    display:inline-flex; align-items:center; gap:8px;
+    transition: gap 0.2s, color 0.2s;
+  }
+  .service-link:hover { color: var(--accent); gap:14px; }
+
+  /* ══════════════════════════════════════
+     TESTIMONIALS
+  ══════════════════════════════════════ */
+  #testimonials {
+    padding: 100px 5vw;
+    text-align:center;
+    overflow:hidden;
+  }
+
+  .testimonials-track {
+    display:flex; gap:2rem;
+    max-width:1100px;
+    margin: 0 auto;
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling:touch;
+    padding-bottom:1rem;
+    scrollbar-width:none;
+  }
+  .testimonials-track::-webkit-scrollbar { display:none; }
+
+  .testimonial-card {
+    flex:0 0 340px;
+    scroll-snap-align:start;
+    background: rgba(13,21,32,0.8);
+    border: 1px solid rgba(74,144,184,0.1);
+    border-top: 2px solid var(--steel);
+    padding: 36px 32px;
+    text-align:left;
+  }
+
+  .quote-mark {
+    font-family:'Cormorant Garamond', serif;
+    font-size:4rem;
+    line-height:0.8;
+    color: var(--steel);
+    opacity:0.4;
+    margin-bottom:0.5rem;
+    display:block;
+  }
+
+  .testimonial-text {
+    font-size:0.9rem;
+    line-height:1.85;
+    color: var(--white-dim);
+    margin-bottom:1.5rem;
+    font-style:italic;
+  }
+
+  .testimonial-name {
+    font-size:0.78rem;
+    font-weight:600;
+    letter-spacing:0.1em;
+    color: var(--steel-light);
+    text-transform:uppercase;
+  }
+
+  .testi-dots {
+    display:flex; gap:8px; justify-content:center;
+    margin-top:2rem;
+  }
+  .testi-dot {
+    width:6px; height:6px; border-radius:50%;
+    background: rgba(74,144,184,0.3);
+    cursor:pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .testi-dot.active { background: var(--steel-light); transform:scale(1.3); }
+
+  /* ══════════════════════════════════════
+     WHY EVOLVE
+  ══════════════════════════════════════ */
+  #why {
+    padding: 100px 5vw;
+    background: rgba(8,12,16,0.6);
+    border-top: 1px solid rgba(74,144,184,0.08);
+  }
+
+  .why-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:5rem;
+    max-width:1100px;
+    margin:0 auto;
+    align-items:center;
+  }
+  @media(max-width:768px){ .why-grid { grid-template-columns:1fr; gap:3rem; } }
+
+  .why-list { list-style:none; }
+  .why-list li {
+    display:flex; gap:1.2rem;
+    padding: 1.4rem 0;
+    border-bottom: 1px solid rgba(74,144,184,0.08);
+  }
+  .why-list li:first-child { border-top: 1px solid rgba(74,144,184,0.08); }
+
+  .why-num {
+    font-family:'Cormorant Garamond', serif;
+    font-size:2rem;
+    font-weight:300;
+    color: rgba(74,144,184,0.25);
+    line-height:1;
+    flex-shrink:0;
+    width:2rem;
+    text-align:right;
+  }
+
+  .why-content h4 {
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.3rem;
+    font-weight:600;
+    color: var(--white);
+    margin-bottom:0.4rem;
+  }
+  .why-content p {
+    font-size:0.85rem;
+    line-height:1.8;
+    color: var(--white-dim);
+  }
+
+  .why-visual {
+    position:relative;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .why-lotus-wrap {
+    position:relative; width:360px; height:360px;
+  }
+  .why-lotus-wrap svg {
+    width:100%; height:100%;
+    opacity:0.55;
+    filter: drop-shadow(0 0 40px rgba(74,144,184,0.25));
+  }
+  .why-stat-overlay {
+    position:absolute; inset:0;
+    display:grid; grid-template-columns:1fr 1fr;
+    gap:1rem;
+    padding:3rem;
+  }
+  .why-stat {
+    background: rgba(8,12,16,0.8);
+    border: 1px solid rgba(74,144,184,0.15);
+    padding:1.2rem 1rem;
+    text-align:center;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+  }
+  .why-stat-num {
+    font-family:'Cormorant Garamond', serif;
+    font-size:2.2rem;
+    font-weight:600;
+    color: var(--steel-light);
+    line-height:1;
+  }
+  .why-stat-label {
+    font-size:0.68rem;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    color: var(--white-dim);
+    margin-top:4px;
+    line-height:1.4;
+  }
+
+  /* ══════════════════════════════════════
+     APPOINTMENT MODAL
+  ══════════════════════════════════════ */
+  .modal-overlay {
+    position:fixed; inset:0; z-index:200;
+    background: rgba(5,10,18,0.9);
+    backdrop-filter:blur(12px);
+    display:none; align-items:center; justify-content:center;
+    padding:20px;
+  }
+  .modal-overlay.open { display:flex; }
+
+  .modal {
+    background: var(--dark2);
+    border: 1px solid rgba(74,144,184,0.2);
+    border-top: 2px solid var(--steel);
+    width:100%; max-width:540px;
+    padding: 48px 44px;
+    position:relative;
+    max-height:90vh; overflow-y:auto;
+    scrollbar-width:thin; scrollbar-color: rgba(74,144,184,0.3) transparent;
+    animation: modalIn 0.35s ease;
+  }
+  @keyframes modalIn {
+    from{ opacity:0; transform:translateY(20px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  @media(max-width:560px){ .modal { padding:32px 24px; } }
+
+  .modal-close {
+    position:absolute; top:16px; right:20px;
+    background:none; border:none; cursor:pointer;
+    color: var(--white-dim); font-size:1.3rem;
+    transition: color 0.2s;
+  }
+  .modal-close:hover { color: var(--steel-light); }
+
+  .modal-title {
+    font-family:'Cormorant Garamond', serif;
+    font-size:2rem;
+    font-weight:600;
+    color: var(--white);
+    margin-bottom:0.3rem;
+  }
+  .modal-sub {
+    font-size:0.82rem;
+    color: var(--white-dim);
+    margin-bottom:2rem;
+  }
+
+  .form-group {
+    margin-bottom:1.2rem;
+  }
+  .form-group label {
+    display:block;
+    font-size:0.72rem;
+    font-weight:500;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    color: var(--steel-light);
+    margin-bottom:6px;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width:100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(74,144,184,0.2);
+    color: var(--white);
+    padding: 12px 16px;
+    font-family:'Jost', sans-serif;
+    font-size:0.88rem;
+    border-radius:2px;
+    outline:none;
+    transition: border-color 0.2s, background 0.2s;
+    appearance:none;
+  }
+  .form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%234a90b8'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;
+    background-position:right 14px center;
+    padding-right:36px;
+    cursor:pointer;
+  }
+  .form-group select option { background: var(--dark2); color: var(--white); }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--steel-light);
+    background: rgba(74,144,184,0.06);
+  }
+  .form-group input::placeholder,
+  .form-group textarea::placeholder { color: rgba(240,246,250,0.28); }
+
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:0.8rem; }
+  @media(max-width:400px){ .form-row { grid-template-columns:1fr; } }
+
+  /* location selector */
+  .loc-selector {
+    display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;
+    margin-bottom:1.2rem;
+  }
+  .loc-option {
+    border: 1px solid rgba(74,144,184,0.2);
+    padding:14px 16px;
+    cursor:pointer;
+    transition: border-color 0.2s, background 0.2s;
+    position:relative;
+    text-align:left;
+  }
+  .loc-option input { position:absolute; opacity:0; pointer-events:none; }
+  .loc-option:hover { border-color: rgba(74,144,184,0.5); background: rgba(74,144,184,0.06); }
+  .loc-option.selected {
+    border-color: var(--steel-light);
+    background: rgba(74,144,184,0.12);
+  }
+  .loc-option.selected::before {
+    content:'✓';
+    position:absolute; top:8px; right:10px;
+    font-size:0.7rem; color: var(--steel-light);
+  }
+  .loc-option-name {
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.1rem;
+    font-weight:600;
+    color: var(--white);
+  }
+  .loc-option-sub {
+    font-size:0.7rem;
+    color: var(--white-dim);
+    margin-top:2px;
+  }
+  .loc-option .cs-tag {
+    font-size:0.58rem;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    color: var(--accent);
+    display:block;
+    margin-top:4px;
+  }
+
+  .form-submit {
+    width:100%; margin-top:1.5rem;
+    background: linear-gradient(135deg, var(--steel-dark), var(--steel));
+    color: var(--white);
+    border:none;
+    padding:16px;
+    font-family:'Jost', sans-serif;
+    font-size:0.82rem;
+    font-weight:500;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    border-radius:2px;
+    cursor:pointer;
+    transition: opacity 0.25s, transform 0.2s, box-shadow 0.25s;
+    box-shadow: 0 4px 24px rgba(74,144,184,0.2);
+  }
+  .form-submit:hover { opacity:0.9; transform:translateY(-2px); box-shadow: 0 8px 32px rgba(74,144,184,0.35); }
+
+  /* ══════════════════════════════════════
+     EUREKA COMING SOON SECTION (FULL)
+  ══════════════════════════════════════ */
+  #eureka-spotlight {
+    padding: 120px 5vw;
+    text-align:center;
+    position:relative; overflow:hidden;
+    border-top: 1px solid rgba(74,144,184,0.1);
+  }
+  #eureka-spotlight::before {
+    content:'';
+    position:absolute; inset:0;
+    background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(74,144,184,0.08) 0%, transparent 70%);
+    pointer-events:none;
+  }
+
+  .spotlight-eyebrow {
+    font-size:0.68rem;
+    letter-spacing:0.4em;
+    text-transform:uppercase;
+    color: var(--accent);
+    margin-bottom:1.5rem;
+    display:flex; align-items:center; justify-content:center; gap:1rem;
+  }
+  .spotlight-eyebrow::before,
+  .spotlight-eyebrow::after {
+    content:''; display:block; width:40px; height:1px;
+    background: linear-gradient(90deg, transparent, var(--steel));
+  }
+  .spotlight-eyebrow::after {
+    background: linear-gradient(90deg, var(--steel), transparent);
+  }
+
+  .spotlight-title {
+    font-family:'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 7vw, 6rem);
+    font-weight:300;
+    color: var(--white);
+    line-height:1;
+    margin-bottom:0.3em;
+  }
+  .spotlight-title strong {
+    font-weight:700;
+    background: linear-gradient(135deg, var(--steel-light), var(--accent));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+
+  .spotlight-sub {
+    font-size: clamp(1rem, 2.5vw, 1.35rem);
+    font-weight:200;
+    color: var(--white-dim);
+    max-width:600px;
+    margin: 1.5rem auto 3.5rem;
+    line-height:1.75;
+  }
+
+  /* big countdown for spotlight */
+  .big-countdown {
+    display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap;
+    margin-bottom:4rem;
+  }
+  .big-cd-unit {
+    display:flex; flex-direction:column; align-items:center;
+    position:relative;
+  }
+  .big-cd-box {
+    width:90px; height:90px;
+    background: rgba(13,21,32,0.9);
+    border: 1px solid rgba(74,144,184,0.25);
+    display:flex; align-items:center; justify-content:center;
+    position:relative; overflow:hidden;
+  }
+  .big-cd-box::before {
+    content:''; position:absolute; top:0; left:0; right:0; height:1px;
+    background: linear-gradient(90deg, transparent, var(--steel), transparent);
+  }
+  .big-cd-num {
+    font-family:'Cormorant Garamond', serif;
+    font-size:3rem;
+    font-weight:700;
+    color: var(--white);
+    line-height:1;
+  }
+  .big-cd-label {
+    font-size:0.62rem;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color: var(--steel-light);
+    margin-top:8px;
+  }
+  .big-cd-sep {
+    font-family:'Cormorant Garamond', serif;
+    font-size:3rem;
+    color: rgba(74,144,184,0.3);
+    padding-top:0.1em;
+    line-height:90px;
+  }
+  @media(max-width:480px){ .big-cd-box{width:64px;height:64px;} .big-cd-num{font-size:2.2rem;} .big-cd-sep{font-size:2.2rem; line-height:64px;} }
+
+  .spotlight-features {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1.5rem;
+    max-width:840px;
+    margin: 0 auto 4rem;
+  }
+  @media(max-width:600px){ .spotlight-features{grid-template-columns:1fr;} }
+
+  .sp-feature {
+    padding: 28px 24px;
+    background: rgba(13,21,32,0.7);
+    border: 1px solid rgba(74,144,184,0.1);
+    border-top: 1px solid rgba(74,144,184,0.3);
+    text-align:center;
+  }
+  .sp-feature-icon { font-size:1.8rem; margin-bottom:0.7rem; }
+  .sp-feature-title {
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.1rem;
+    font-weight:600;
+    color: var(--white);
+    margin-bottom:0.4rem;
+  }
+  .sp-feature-text {
+    font-size:0.8rem;
+    line-height:1.7;
+    color: var(--white-dim);
+  }
+
+  /* ══════════════════════════════════════
+     CONTACT / CTA
+  ══════════════════════════════════════ */
+  #contact {
+    padding: 80px 5vw;
+    text-align:center;
+    background: rgba(8,12,16,0.5);
+    border-top: 1px solid rgba(74,144,184,0.08);
+  }
+
+  .contact-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:4rem;
+    max-width:900px;
+    margin: 3rem auto 0;
+    text-align:left;
+  }
+  @media(max-width:640px){ .contact-grid{grid-template-columns:1fr; gap:2.5rem;} }
+
+  .contact-block h4 {
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.4rem;
+    font-weight:600;
+    color: var(--white);
+    margin-bottom:0.8rem;
+    padding-bottom:0.6rem;
+    border-bottom: 1px solid rgba(74,144,184,0.15);
+  }
+  .contact-block p,
+  .contact-block a {
+    font-size:0.85rem;
+    line-height:1.9;
+    color: var(--white-dim);
+    text-decoration:none;
+    display:block;
+    transition: color 0.2s;
+  }
+  .contact-block a:hover { color: var(--steel-light); }
+  .contact-block .coming-note {
+    display:inline-block; margin-top:4px;
+    font-size:0.72rem;
+    color: var(--accent);
+    letter-spacing:0.1em;
+  }
+
+  /* ══════════════════════════════════════
+     FOOTER
+  ══════════════════════════════════════ */
+  footer {
+    padding: 40px 5vw;
+    border-top: 1px solid rgba(74,144,184,0.1);
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:1rem;
+  }
+
+  .footer-logo {
+    display:flex; align-items:center; gap:10px;
+    text-decoration:none;
+  }
+  .footer-logo svg { width:28px; height:28px; }
+  .footer-logo-text {
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.1rem;
+    font-weight:600;
+    color: var(--white-dim);
+    letter-spacing:0.05em;
+  }
+
+  .footer-links {
+    display:flex; gap:1.5rem; list-style:none; flex-wrap:wrap;
+  }
+  .footer-links a {
+    font-size:0.75rem;
+    letter-spacing:0.1em;
+    color: var(--white-dim);
+    text-decoration:none;
+    text-transform:uppercase;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--steel-light); }
+
+  .footer-copy {
+    font-size:0.72rem;
+    color: rgba(240,246,250,0.3);
+    width:100%;
+    text-align:center;
+    margin-top:0.5rem;
+  }
+
+  /* ══════════════════════════════════════
+     UTILITY
+  ══════════════════════════════════════ */
+  .sr-only {
+    position:absolute; width:1px; height:1px;
+    padding:0; margin:-1px; overflow:hidden;
+    clip:rect(0,0,0,0); white-space:nowrap; border:0;
+  }
+
+  /* Intersection Observer animations */
+  .reveal {
+    opacity:0; transform:translateY(32px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { opacity:1; transform:none; }
+  .reveal-delay-1 { transition-delay:0.1s; }
+  .reveal-delay-2 { transition-delay:0.2s; }
+  .reveal-delay-3 { transition-delay:0.3s; }
+  .reveal-delay-4 { transition-delay:0.4s; }
+</style>
+</head>
+<body>
+
+<!-- Particle Canvas -->
+<canvas id="particles"></canvas>
+
+<!-- NAV -->
+<nav id="main-nav" aria-label="Main navigation">
+  <a href="#" class="nav-logo" aria-label="Evolve Wellness Home">
+    <!-- Lotus SVG Logo -->
+    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="40" cy="40" r="38" stroke="rgba(74,144,184,0.25)" stroke-width="1"/>
+      <!-- lotus petals -->
+      <path d="M40 58 C40 58 28 50 28 38 C28 30 34 25 40 25 C46 25 52 30 52 38 C52 50 40 58 40 58Z" fill="rgba(74,144,184,0.15)" stroke="#4a90b8" stroke-width="1.2"/>
+      <path d="M40 58 C40 58 22 46 20 34 C18 24 28 18 34 22 C28 32 32 44 40 58Z" fill="rgba(74,144,184,0.1)" stroke="#4a90b8" stroke-width="1" opacity="0.85"/>
+      <path d="M40 58 C40 58 58 46 60 34 C62 24 52 18 46 22 C52 32 48 44 40 58Z" fill="rgba(74,144,184,0.1)" stroke="#4a90b8" stroke-width="1" opacity="0.85"/>
+      <path d="M40 58 C40 58 17 42 18 28 C19 18 30 16 36 20 C26 28 28 44 40 58Z" fill="rgba(74,144,184,0.07)" stroke="#4a90b8" stroke-width="0.8" opacity="0.7"/>
+      <path d="M40 58 C40 58 63 42 62 28 C61 18 50 16 44 20 C54 28 52 44 40 58Z" fill="rgba(74,144,184,0.07)" stroke="#4a90b8" stroke-width="0.8" opacity="0.7"/>
+      <!-- center -->
+      <circle cx="40" cy="36" r="4" fill="#4a90b8" opacity="0.6"/>
+      <circle cx="40" cy="36" r="2" fill="#6db4d8"/>
+      <!-- water line -->
+      <path d="M28 58 Q40 54 52 58" stroke="#4a90b8" stroke-width="1" opacity="0.5" fill="none"/>
+      <path d="M22 62 Q40 56 58 62" stroke="#4a90b8" stroke-width="0.7" opacity="0.3" fill="none"/>
+    </svg>
+    <span class="nav-logo-text">EVOLVE <span>WELLNESS</span></span>
+  </a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#locations">Locations</a></li>
+    <li><a href="#why">About</a></li>
+    <li><a href="#testimonials">Results</a></li>
+    <li><a href="https://patientportal.advancedmd.com/account/LogOn?lk=157657" target="_blank" rel="noopener">Patient Portal</a></li>
+    <li><a href="#" class="nav-cta" onclick="openModal(event)">Book Appointment</a></li>
+  </ul>
+
+  <button class="hamburger" aria-label="Open menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu">
+  <button class="m-close" onclick="toggleMenu()" aria-label="Close menu">✕</button>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#locations" onclick="toggleMenu()">Locations</a>
+  <a href="#why" onclick="toggleMenu()">About</a>
+  <a href="#testimonials" onclick="toggleMenu()">Results</a>
+  <a href="https://patientportal.advancedmd.com/account/LogOn?lk=157657" target="_blank">Patient Portal</a>
+  <a href="#" class="btn-primary" onclick="toggleMenu(); openModal(event)">Book Appointment</a>
+</div>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<header id="hero" role="banner">
+  <div class="hero-ring"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-ring"></div>
+
+  <!-- Background lotus watermark -->
+  <svg class="hero-lotus-bg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M100 160 C100 160 60 136 60 104 C60 84 76 70 100 70 C124 70 140 84 140 104 C140 136 100 160 100 160Z" stroke="#4a90b8" stroke-width="1.5"/>
+    <path d="M100 160 C100 160 48 126 44 94 C40 66 68 52 80 60 C62 84 70 120 100 160Z" stroke="#4a90b8" stroke-width="1.2"/>
+    <path d="M100 160 C100 160 152 126 156 94 C160 66 132 52 120 60 C138 84 130 120 100 160Z" stroke="#4a90b8" stroke-width="1.2"/>
+    <path d="M100 160 C100 160 38 116 40 80 C42 52 70 46 84 56 C60 74 64 116 100 160Z" stroke="#4a90b8" stroke-width="1"/>
+    <path d="M100 160 C100 160 162 116 160 80 C158 52 130 46 116 56 C140 74 136 116 100 160Z" stroke="#4a90b8" stroke-width="1"/>
+    <circle cx="100" cy="95" r="10" stroke="#4a90b8" stroke-width="1.5"/>
+    <circle cx="100" cy="95" r="5" fill="#4a90b8" opacity="0.4"/>
+    <path d="M75 160 Q100 148 125 160" stroke="#4a90b8" stroke-width="1.5"/>
+    <path d="M62 170 Q100 154 138 170" stroke="#4a90b8" stroke-width="1"/>
+  </svg>
+
+  <p class="hero-eyebrow">Hormone Therapy · Weight Loss · IV Therapy · Anti-Aging</p>
+
+  <h1 class="hero-title">
+    You Have Two Choices —<br><em>Evolve</em> or Remain
+  </h1>
+
+  <p class="hero-sub">
+    Cutting-edge, personalized wellness therapies grounded in science. Testosterone optimization, hormone replacement, medical weight loss, and more — at two Missouri locations.
+  </p>
+
+  <div class="hero-divider"></div>
+
+  <div class="hero-actions">
+    <a href="#" class="btn-primary" onclick="openModal(event)">Schedule Appointment</a>
+    <a href="#services" class="btn-outline">Explore Services</a>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════
+     LOCATIONS
+══════════════════════════════════════ -->
+<section id="locations" aria-labelledby="loc-heading">
+  <p class="section-label reveal">Our Locations</p>
+  <h2 id="loc-heading" class="section-title reveal reveal-delay-1">Two Locations — <em>One Mission</em></h2>
+  <p class="section-sub reveal reveal-delay-2">Accessible, personalized care in the heart of Missouri. Choose the location nearest you.</p>
+
+  <div class="locations-grid">
+
+    <!-- ARNOLD -->
+    <div class="location-card reveal">
+      <span class="loc-badge badge-open">Now Open</span>
+      <h3 class="loc-name">Arnold</h3>
+      <p class="loc-state">Missouri</p>
+      <div class="loc-divider"></div>
+      <div class="loc-info">
+        <strong>3906 Vogel Road</strong><br>
+        Arnold, MO 63010<br><br>
+        <strong>Hours:</strong><br>
+        Mon–Thurs: 9am – 5pm<br>
+        Friday: 8am – 3pm<br><br>
+        <a href="tel:6365855698" style="color:var(--steel-light);text-decoration:none;">(636) 585-5698</a><br>
+        <a href="mailto:info@evolvearnold.com" style="color:var(--steel-light);text-decoration:none;">info@evolvearnold.com</a>
+      </div>
+      <a href="#" class="btn-primary" onclick="openModal(event, 'arnold')">Book at Arnold</a>
+    </div>
+
+    <!-- EUREKA -->
+    <div class="location-card coming-soon reveal reveal-delay-2">
+      <div class="eureka-glow" aria-hidden="true"></div>
+      <span class="loc-badge badge-soon">✦ Coming Soon</span>
+      <h3 class="loc-name">Eureka</h3>
+      <p class="loc-state">Missouri</p>
+      <div class="loc-divider"></div>
+      <p class="coming-soon-headline">"A new chapter in your wellness journey is about to begin."</p>
+      <p class="coming-soon-text">
+        Our second location is arriving soon in Eureka, MO — bringing the same transformative, personalized care even closer to you. Be among the first to experience it.
+      </p>
+
+      <p class="countdown-label">Opening In</p>
+      <div class="countdown" id="small-countdown">
+        <div class="cd-unit"><span class="cd-num" id="sc-days">--</span><span class="cd-label">Days</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><span class="cd-num" id="sc-hours">--</span><span class="cd-label">Hrs</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><span class="cd-num" id="sc-mins">--</span><span class="cd-label">Min</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><span class="cd-num" id="sc-secs">--</span><span class="cd-label">Sec</span></div>
+      </div>
+
+      <form class="notify-form" onsubmit="handleNotify(event)" aria-label="Notify me when Eureka opens">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit">Notify Me</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     EUREKA SPOTLIGHT
+══════════════════════════════════════ -->
+<section id="eureka-spotlight" aria-labelledby="eureka-heading">
+  <p class="spotlight-eyebrow">Something Big Is Coming</p>
+  <h2 id="eureka-heading" class="spotlight-title reveal">
+    Eureka, Missouri<br><strong>Is Ready to Evolve</strong>
+  </h2>
+  <p class="spotlight-sub reveal reveal-delay-1">
+    Our brand-new Eureka clinic brings the full Evolve Wellness experience — state-of-the-art therapies, personalized care, and a dedicated wellness team — to a new community.
+  </p>
+
+  <!-- Big countdown -->
+  <div class="big-countdown" id="big-countdown" aria-label="Countdown to Eureka opening">
+    <div class="big-cd-unit">
+      <div class="big-cd-box"><span class="big-cd-num" id="bc-days">--</span></div>
+      <span class="big-cd-label">Days</span>
+    </div>
+    <span class="big-cd-sep">:</span>
+    <div class="big-cd-unit">
+      <div class="big-cd-box"><span class="big-cd-num" id="bc-hours">--</span></div>
+      <span class="big-cd-label">Hours</span>
+    </div>
+    <span class="big-cd-sep">:</span>
+    <div class="big-cd-unit">
+      <div class="big-cd-box"><span class="big-cd-num" id="bc-mins">--</span></div>
+      <span class="big-cd-label">Minutes</span>
+    </div>
+    <span class="big-cd-sep">:</span>
+    <div class="big-cd-unit">
+      <div class="big-cd-box"><span class="big-cd-num" id="bc-secs">--</span></div>
+      <span class="big-cd-label">Seconds</span>
+    </div>
+  </div>
+
+  <div class="spotlight-features reveal">
+    <div class="sp-feature">
+      <div class="sp-feature-icon">🌿</div>
+      <h3 class="sp-feature-title">Full Service Clinic</h3>
+      <p class="sp-feature-text">Every treatment available at our Arnold location, now in Eureka — hormone therapy, weight loss, IV drips, and more.</p>
+    </div>
+    <div class="sp-feature">
+      <div class="sp-feature-icon">⚡</div>
+      <h3 class="sp-feature-title">State-of-the-Art</h3>
+      <p class="sp-feature-text">Equipped with the latest wellness technology and the warm, personalized touch you expect from Evolve.</p>
+    </div>
+    <div class="sp-feature">
+      <div class="sp-feature-icon">📍</div>
+      <h3 class="sp-feature-title">Eureka, MO</h3>
+      <p class="sp-feature-text">Conveniently located to serve Eureka, Pacific, and surrounding communities with premium wellness care.</p>
+    </div>
+  </div>
+
+  <a href="#" class="btn-primary reveal" onclick="openModal(event, 'eureka')">Pre-Register for Eureka</a>
+</section>
+
+<!-- ══════════════════════════════════════
+     SERVICES
+══════════════════════════════════════ -->
+<section id="services" aria-labelledby="svc-heading">
+  <p class="section-label reveal">What We Offer</p>
+  <h2 id="svc-heading" class="section-title reveal reveal-delay-1">Therapies That <em>Transform</em></h2>
+  <p class="section-sub reveal reveal-delay-2">
+    Evidence-based treatments delivered by experienced nurse practitioners — personalized to your bloodwork and your body.
+  </p>
+
+  <div class="services-grid" role="list">
+
+    <div class="service-card reveal" role="listitem">
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+        <path d="M12 8v4l3 3"/>
+      </svg>
+      <h3 class="service-name">Hormone Replacement — Women</h3>
+      <p class="service-desc">Bioidentical hormone therapy to balance estrogen, progesterone, and testosterone. Restore energy, mood, libido, and clarity.</p>
+      <a href="https://www.evolvearnold.com/female-hormone-replacement" class="service-link" target="_blank" rel="noopener">Learn More →</a>
+    </div>
+
+    <div class="service-card reveal reveal-delay-1" role="listitem">
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+        <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+      </svg>
+      <h3 class="service-name">Testosterone Optimization — Men</h3>
+      <p class="service-desc">Precision TRT programs to restore vitality, muscle mass, mental edge, and overall quality of life.</p>
+      <a href="https://www.evolvearnold.com/male-hormone-replacement" class="service-link" target="_blank" rel="noopener">Learn More →</a>
+    </div>
+
+    <div class="service-card reveal reveal-delay-2" role="listitem">
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+        <path d="M12 20V10M6 20V14M18 20V6"/>
+      </svg>
+      <h3 class="service-name">Medical Weight Loss</h3>
+      <p class="service-desc">Tirzepatide, semaglutide, and personalized nutrition plans. Clinical, sustainable, and monitored — not a fad diet.</p>
+      <a href="https://www.evolvearnold.com/weight-loss" class="service-link" target="_blank" rel="noopener">Learn More →</a>
+    </div>
+
+    <div class="service-card reveal" role="listitem">
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+        <path d="M12 3l1.9 5.8H20l-4.9 3.6 1.9 5.8L12 15l-4.9 3.2 1.9-5.8L4 8.8h6.1z"/>
+      </svg>
+      <h3 class="service-name">IV Therapy & NAD+</h3>
+      <p class="service-desc">Rapid rehydration, vitamin infusions, and NAD+ therapy for cellular energy, cognitive clarity, and recovery.</p>
+      <a href="https://www.evolvearnold.com/iv-therapy-supplements" class="service-link" target="_blank" rel="noopener">Learn More →</a>
+    </div>
+
+    <div class="service-card reveal reveal-delay-1" role="listitem">
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+        <circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+      <h3 class="service-name">Anti-Aging & Peptide Therapy</h3>
+      <p class="service-desc">Cutting-edge peptides and regenerative protocols to slow aging at the cellular level — inside and out.</p>
+      <a href="https://www.evolvearnold.com/anti-aging" class="service-link" target="_blank" rel="noopener">Learn More →</a>
+    </div>
+
+    <div class="service-card reveal reveal-delay-2" role="listitem">
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+        <path d="M4 8h16M4 16h16M8 4v16M16 4v16"/>
+      </svg>
+      <h3 class="service-name">Thyroid Management</h3>
+      <p class="service-desc">Comprehensive thyroid evaluation and optimization — addressing root causes of fatigue, weight gain, and brain fog.</p>
+      <a href="https://www.evolvearnold.com/thyroid" class="service-link" target="_blank" rel="noopener">Learn More →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════ -->
+<section id="testimonials" aria-labelledby="testi-heading">
+  <p class="section-label reveal">Real Results</p>
+  <h2 id="testi-heading" class="section-title reveal reveal-delay-1">Stories That <em>Inspire</em></h2>
+  <p class="section-sub reveal reveal-delay-2">Our patients' success is the truest measure of our work.</p>
+
+  <div class="testimonials-track" id="testi-track" role="list">
+    <article class="testimonial-card" role="listitem">
+      <span class="quote-mark" aria-hidden="true">"</span>
+      <p class="testimonial-text">I started tirzepatide at 255 lbs. 4 months in and I've lost 54 lbs. I still have a way to go but I feel so much better mentally and physically. The team at Evolve are so encouraging and helpful.</p>
+      <p class="testimonial-name">Kimberly Schwab</p>
+    </article>
+    <article class="testimonial-card" role="listitem">
+      <span class="quote-mark" aria-hidden="true">"</span>
+      <p class="testimonial-text">I wasn't feeling 100%. After an evaluation by NP Lauren, she changed things up and I am feeling better than ever. Great place to go — I highly recommend it.</p>
+      <p class="testimonial-name">James Schwenk</p>
+    </article>
+    <article class="testimonial-card" role="listitem">
+      <span class="quote-mark" aria-hidden="true">"</span>
+      <p class="testimonial-text">I'm over halfway to my weight loss goal with over 20 lbs. lost! Even while traveling I stay on track. Huge shout out to Evolve Wellness for the insight and plan helping me achieve this.</p>
+      <p class="testimonial-name">Angie Norris</p>
+    </article>
+    <article class="testimonial-card" role="listitem">
+      <span class="quote-mark" aria-hidden="true">"</span>
+      <p class="testimonial-text">I can't be more thankful. I'm feeling and looking way better than I ever thought could happen! My energy levels are back to normal, my weight is in control — they are amazing.</p>
+      <p class="testimonial-name">Heather Marie Chaves</p>
+    </article>
+    <article class="testimonial-card" role="listitem">
+      <span class="quote-mark" aria-hidden="true">"</span>
+      <p class="testimonial-text">Go! You will not be disappointed. I'm so glad I started this journey as it's going to benefit my health in so many ways.</p>
+      <p class="testimonial-name">Melissa Ann</p>
+    </article>
+  </div>
+  <div class="testi-dots" id="testi-dots" aria-hidden="true"></div>
+</section>
+
+<!-- ══════════════════════════════════════
+     WHY EVOLVE
+══════════════════════════════════════ -->
+<section id="why" aria-labelledby="why-heading">
+  <div class="why-grid">
+    <div>
+      <p class="section-label reveal">Why Evolve</p>
+      <h2 id="why-heading" class="section-title reveal reveal-delay-1">Medicine That <em>Listens</em></h2>
+      <p class="section-sub reveal reveal-delay-2" style="margin:0 0 3rem;">Traditional medicine often treats symptoms. We address root causes — with personalized protocols built around your unique biology.</p>
+
+      <ul class="why-list">
+        <li class="reveal">
+          <span class="why-num">01</span>
+          <div class="why-content">
+            <h4>Bloodwork-First Approach</h4>
+            <p>Every protocol is built on your bloodwork, not guesswork. Precision care that's actually personal.</p>
+          </div>
+        </li>
+        <li class="reveal reveal-delay-1">
+          <span class="why-num">02</span>
+          <div class="why-content">
+            <h4>Expert Nurse Practitioners</h4>
+            <p>Our team stays current with the latest evidence-based treatments in hormone health and longevity medicine.</p>
+          </div>
+        </li>
+        <li class="reveal reveal-delay-2">
+          <span class="why-num">03</span>
+          <div class="why-content">
+            <h4>Beyond Traditional Medicine</h4>
+            <p>We offer alternatives for those failed by conventional approaches — comprehensive, whole-person care.</p>
+          </div>
+        </li>
+        <li class="reveal reveal-delay-3">
+          <span class="why-num">04</span>
+          <div class="why-content">
+            <h4>Appointment-Based, No Rushed Visits</h4>
+            <p>Dedicated one-on-one time with your care team. Your health deserves more than five minutes.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="why-visual reveal">
+      <div class="why-lotus-wrap">
+        <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M150 220 C150 220 100 192 100 158 C100 138 118 124 150 124 C182 124 200 138 200 158 C200 192 150 220 150 220Z" stroke="#4a90b8" stroke-width="1.5" fill="rgba(74,144,184,0.04)"/>
+          <path d="M150 220 C150 220 88 186 84 154 C80 126 108 112 120 120 C100 144 108 180 150 220Z" stroke="#4a90b8" stroke-width="1.2" fill="rgba(74,144,184,0.03)"/>
+          <path d="M150 220 C150 220 212 186 216 154 C220 126 192 112 180 120 C200 144 192 180 150 220Z" stroke="#4a90b8" stroke-width="1.2" fill="rgba(74,144,184,0.03)"/>
+          <path d="M150 220 C150 220 76 180 78 146 C80 116 110 110 122 118 C98 138 104 176 150 220Z" stroke="#4a90b8" stroke-width="1" fill="rgba(74,144,184,0.02)" opacity="0.8"/>
+          <path d="M150 220 C150 220 224 180 222 146 C220 116 190 110 178 118 C202 138 196 176 150 220Z" stroke="#4a90b8" stroke-width="1" fill="rgba(74,144,184,0.02)" opacity="0.8"/>
+          <path d="M150 220 C150 220 66 172 70 134 C74 104 112 98 126 110 C96 130 100 172 150 220Z" stroke="#4a90b8" stroke-width="0.8" opacity="0.6"/>
+          <path d="M150 220 C150 220 234 172 230 134 C226 104 188 98 174 110 C204 130 200 172 150 220Z" stroke="#4a90b8" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="150" cy="138" r="12" stroke="#4a90b8" stroke-width="1.5" fill="rgba(74,144,184,0.1)"/>
+          <circle cx="150" cy="138" r="6" fill="#4a90b8" opacity="0.5"/>
+          <circle cx="150" cy="138" r="3" fill="#6db4d8"/>
+          <path d="M118 220 Q150 208 182 220" stroke="#4a90b8" stroke-width="1.5" fill="none"/>
+          <path d="M104 230 Q150 214 196 230" stroke="#4a90b8" stroke-width="1" fill="none" opacity="0.5"/>
+          <circle cx="150" cy="300" r="280" stroke="rgba(74,144,184,0.06)" stroke-width="1" fill="none"/>
+          <circle cx="150" cy="300" r="230" stroke="rgba(74,144,184,0.05)" stroke-width="1" fill="none"/>
+        </svg>
+        <div class="why-stat-overlay" aria-label="Clinic statistics">
+          <div class="why-stat">
+            <span class="why-stat-num">2+</span>
+            <span class="why-stat-label">Years Serving MO</span>
+          </div>
+          <div class="why-stat">
+            <span class="why-stat-num">6</span>
+            <span class="why-stat-label">Core Therapies</span>
+          </div>
+          <div class="why-stat">
+            <span class="why-stat-num">100%</span>
+            <span class="why-stat-label">Personalized Care</span>
+          </div>
+          <div class="why-stat">
+            <span class="why-stat-num">2</span>
+            <span class="why-stat-label">Missouri Locations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+<section id="contact" aria-labelledby="contact-heading">
+  <p class="section-label reveal">Get In Touch</p>
+  <h2 id="contact-heading" class="section-title reveal reveal-delay-1">Start Your <em>Journey</em></h2>
+
+  <div class="contact-grid">
+    <div class="contact-block reveal">
+      <h4>Arnold, MO</h4>
+      <p>3906 Vogel Road<br>Arnold, MO 63010</p>
+      <a href="tel:6365855698">(636) 585-5698</a>
+      <a href="mailto:info@evolvearnold.com">info@evolvearnold.com</a>
+      <p style="margin-top:0.8rem">Mon–Thurs: 9am – 5pm<br>Friday: 8am – 3pm</p>
+    </div>
+    <div class="contact-block reveal reveal-delay-2">
+      <h4>Eureka, MO <span class="coming-note">✦ Coming Soon</span></h4>
+      <p>Eureka, MO<br>Exact address announced soon</p>
+      <p style="margin-top:0.8rem; font-style:italic; color:var(--white-dim); font-size:0.82rem;">Be the first to know — enter your email in the Eureka card above.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:3.5rem;" class="reveal">
+    <a href="#" class="btn-primary" onclick="openModal(event)" style="display:inline-block;">Book Your Appointment</a>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer role="contentinfo">
+  <a href="#" class="footer-logo" aria-label="Evolve Wellness Home">
+    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M40 58 C40 58 28 50 28 38 C28 30 34 25 40 25 C46 25 52 30 52 38 C52 50 40 58 40 58Z" fill="rgba(74,144,184,0.12)" stroke="#4a90b8" stroke-width="1"/>
+      <path d="M40 58 C40 58 22 46 20 34 C18 24 28 18 34 22 C28 32 32 44 40 58Z" stroke="#4a90b8" stroke-width="0.8" opacity="0.7" fill="none"/>
+      <path d="M40 58 C40 58 58 46 60 34 C62 24 52 18 46 22 C52 32 48 44 40 58Z" stroke="#4a90b8" stroke-width="0.8" opacity="0.7" fill="none"/>
+      <circle cx="40" cy="36" r="3" fill="#4a90b8" opacity="0.7"/>
+    </svg>
+    <span class="footer-logo-text">EVOLVE WELLNESS</span>
+  </a>
+
+  <ul class="footer-links" role="list">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#locations">Locations</a></li>
+    <li><a href="#why">About</a></li>
+    <li><a href="https://patientportal.advancedmd.com/account/LogOn?lk=157657" target="_blank" rel="noopener">Patient Portal</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+  </ul>
+
+  <p class="footer-copy">© 2025 Evolve Wellness · Arnold, MO · Eureka, MO Coming Soon · (636) 585-5698</p>
+</footer>
+
+<!-- ══════════════════════════════════════
+     APPOINTMENT MODAL
+══════════════════════════════════════ -->
+<div class="modal-overlay" id="appt-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close modal">✕</button>
+    <h2 class="modal-title" id="modal-title">Book Appointment</h2>
+    <p class="modal-sub">Select your preferred location and we'll be in touch within 24 hours.</p>
+
+    <form onsubmit="handleAppt(event)" novalidate>
+      <div class="form-group">
+        <label>Select Location</label>
+        <div class="loc-selector" role="radiogroup" aria-label="Choose location">
+          <div class="loc-option" id="opt-arnold" onclick="selectLocation('arnold')" role="radio" aria-checked="true" tabindex="0">
+            <input type="radio" name="location" value="arnold" checked>
+            <div class="loc-option-name">Arnold</div>
+            <div class="loc-option-sub">3906 Vogel Rd, Arnold MO</div>
+          </div>
+          <div class="loc-option" id="opt-eureka" onclick="selectLocation('eureka')" role="radio" aria-checked="false" tabindex="0">
+            <input type="radio" name="location" value="eureka">
+            <div class="loc-option-name">Eureka</div>
+            <div class="loc-option-sub">Eureka, MO</div>
+            <span class="cs-tag">✦ Coming Soon — Pre-Register</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="f-first">First Name</label>
+          <input type="text" id="f-first" name="first" placeholder="Jane" required>
+        </div>
+        <div class="form-group">
+          <label for="f-last">Last Name</label>
+          <input type="text" id="f-last" name="last" placeholder="Smith" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="f-email">Email Address</label>
+        <input type="email" id="f-email" name="email" placeholder="jane@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="f-phone">Phone Number</label>
+        <input type="tel" id="f-phone" name="phone" placeholder="(636) 000-0000">
+      </div>
+
+      <div class="form-group">
+        <label for="f-service">Service of Interest</label>
+        <select id="f-service" name="service">
+          <option value="">Select a service...</option>
+          <option>Hormone Replacement – Women</option>
+          <option>Testosterone Optimization – Men</option>
+          <option>Medical Weight Loss</option>
+          <option>IV Therapy / NAD+</option>
+          <option>Anti-Aging / Peptide Therapy</option>
+          <option>Thyroid Management</option>
+          <option>Not Sure — General Consultation</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="f-notes">Anything else we should know?</label>
+        <textarea id="f-notes" name="notes" rows="3" placeholder="Optional notes..."></textarea>
+      </div>
+
+      <button type="submit" class="form-submit">Request Appointment</button>
+    </form>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCRIPTS
+══════════════════════════════════════ -->
+<script>
+// ── Countdown ──
+const openDate = new Date('2025-09-01T09:00:00');
+
+function updateCountdowns() {
+  const now = new Date();
+  const diff = openDate - now;
+  if (diff <= 0) {
+    ['sc-days','sc-hours','sc-mins','sc-secs','bc-days','bc-hours','bc-mins','bc-secs'].forEach(id=>{
+      const el = document.getElementById(id); if(el) el.textContent='00';
+    });
+    return;
+  }
+  const d = Math.floor(diff/86400000);
+  const h = Math.floor((diff%86400000)/3600000);
+  const m = Math.floor((diff%3600000)/60000);
+  const s = Math.floor((diff%60000)/1000);
+  const pad = n => String(n).padStart(2,'0');
+
+  const ids = [['sc-days','sc-hours','sc-mins','sc-secs'],['bc-days','bc-hours','bc-mins','bc-secs']];
+  const vals = [pad(d),pad(h),pad(m),pad(s)];
+  ids.forEach(group => group.forEach((id,i)=>{ const el=document.getElementById(id); if(el) el.textContent=vals[i]; }));
+}
+updateCountdowns();
+setInterval(updateCountdowns, 1000);
+
+// ── Particles ──
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+let W, H, particles;
+
+function initParticles() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+  particles = Array.from({length:55}, () => ({
+    x: Math.random()*W,
+    y: Math.random()*H,
+    r: Math.random()*1.5+0.3,
+    vx: (Math.random()-0.5)*0.25,
+    vy: (Math.random()-0.5)*0.25,
+    a: Math.random()*0.4+0.1
+  }));
+}
+
+function drawParticles() {
+  ctx.clearRect(0,0,W,H);
+  particles.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+    ctx.fillStyle = `rgba(74,144,184,${p.a})`;
+    ctx.fill();
+    p.x += p.vx; p.y += p.vy;
+    if(p.x<0) p.x=W; if(p.x>W) p.x=0;
+    if(p.y<0) p.y=H; if(p.y>H) p.y=0;
+  });
+  requestAnimationFrame(drawParticles);
+}
+
+initParticles();
+drawParticles();
+window.addEventListener('resize', initParticles);
+
+// ── Intersection Observer (reveal) ──
+const revealEls = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+}, { threshold: 0.12 });
+revealEls.forEach(el => obs.observe(el));
+
+// ── Nav scroll effect ──
+window.addEventListener('scroll', () => {
+  document.getElementById('main-nav').style.background =
+    window.scrollY > 60 ? 'rgba(8,12,16,0.97)' : 'rgba(8,12,16,0.85)';
+});
+
+// ── Mobile menu ──
+function toggleMenu() {
+  document.getElementById('mobile-menu').classList.toggle('open');
+}
+
+// ── Modal ──
+let selectedLoc = 'arnold';
+
+function openModal(e, loc) {
+  if(e) e.preventDefault();
+  if(loc) selectLocation(loc);
+  document.getElementById('appt-modal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+function closeModal() {
+  document.getElementById('appt-modal').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+document.getElementById('appt-modal').addEventListener('click', function(e) {
+  if(e.target === this) closeModal();
+});
+
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
+
+function selectLocation(loc) {
+  selectedLoc = loc;
+  document.getElementById('opt-arnold').classList.toggle('selected', loc==='arnold');
+  document.getElementById('opt-eureka').classList.toggle('selected', loc==='eureka');
+  document.getElementById('opt-arnold').setAttribute('aria-checked', loc==='arnold');
+  document.getElementById('opt-eureka').setAttribute('aria-checked', loc==='eureka');
+}
+selectLocation('arnold');
+
+function handleAppt(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.form-submit');
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = '✓ Request Received!';
+    btn.style.background = 'linear-gradient(135deg,#1a5c3a,#2e8a56)';
+    setTimeout(closeModal, 2000);
+  }, 1200);
+}
+
+function handleNotify(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button');
+  btn.textContent = '✓ Added!';
+  btn.style.background = 'linear-gradient(135deg,#1a5c3a,#2e8a56)';
+  btn.disabled = true;
+  e.target.querySelector('input').value = '';
+}
+
+// ── Testimonial dots ──
+const track = document.getElementById('testi-track');
+const dotsWrap = document.getElementById('testi-dots');
+const cards = track.querySelectorAll('.testimonial-card');
+
+cards.forEach((_,i) => {
+  const d = document.createElement('div');
+  d.className = 'testi-dot' + (i===0?' active':'');
+  d.addEventListener('click', () => {
+    cards[i].scrollIntoView({behavior:'smooth', block:'nearest', inline:'start'});
+  });
+  dotsWrap.appendChild(d);
+});
+
+track.addEventListener('scroll', () => {
+  const idx = Math.round(track.scrollLeft / 360);
+  dotsWrap.querySelectorAll('.testi-dot').forEach((d,i) => d.classList.toggle('active', i===idx));
+}, {passive:true});
+</script>
+
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalOrganization",
+  "name":"Evolve Wellness",
+  "url":"https://www.evolvearnold.com",
+  "telephone":"(636) 585-5698",
+  "email":"info@evolvearnold.com",
+  "description":"Hormone replacement therapy, medical weight loss, IV therapy, and anti-aging treatments in Arnold and Eureka, Missouri.",
+  "medicalSpecialty":["HormoneTherapy","Endocrinology","GeneralPractice"],
+  "location":[
+    {
+      "@type":"MedicalClinic",
+      "name":"Evolve Wellness — Arnold",
+      "address":{"@type":"PostalAddress","streetAddress":"3906 Vogel Road","addressLocality":"Arnold","addressRegion":"MO","postalCode":"63010"},
+      "telephone":"(636) 585-5698",
+      "openingHours":["Mo-Th 09:00-17:00","Fr 08:00-15:00"]
+    },
+    {
+      "@type":"MedicalClinic",
+      "name":"Evolve Wellness — Eureka (Coming Soon)",
+      "address":{"@type":"PostalAddress","addressLocality":"Eureka","addressRegion":"MO"}
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
